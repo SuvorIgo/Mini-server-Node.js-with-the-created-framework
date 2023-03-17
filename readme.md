@@ -15,6 +15,7 @@ The REST API to the example app is described below.
 ## List of requests for fiilms
 
 > GET: /api/films
+> 
 > GET: /api/films?id={param}
 
 > POST: /api/films
