@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>404 Error Page</title>
+      <link rel="stylesheet" href="style.css">
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+        *{
+        margin: 0;
+        padding: 0;
+        outline: none;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        }
+        body{
+        height: 100vh;
+        background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
+        background-size: 400%;
+        }
+        #error-page{
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        right: 15%;
+        bottom: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+        }
+        #error-page .content{
+        max-width: 100%;
+        text-align: center;
+        }
+        .content h2.header{
+        font-size: 18vw;
+        line-height: 1em;
+        position: relative;
+        margin: 0 auto;
+        }
+        @keyframes animate {
+        0%{
+            background-position: 0 0;
+        }
+        25%{
+            background-position: 100% 0;
+        }
+        50%{
+            background-position: 100% 100%;
+        }
+        75%{
+            background-position: 0% 100%;
+        }
+        100%{
+            background-position: 0% 0%;
+        }
+        }
+        .content h4{
+        font-size: 1.5em;
+        margin: 0 auto;
+        text-transform: uppercase;
+        color: #000;
+        font-size: 2em;
+        max-width: 100%;
+        position: relative;
+        }
+        .content h4:after{
+        position: absolute;
+        content: attr(data-text);
+        top: 0;
+        left: 0;
+        right: 0;
+        text-shadow: 1px 1px 2px rgba(255,255,255,0.4);
+        -webkit-text-fill-color: transparent;
+        }
+      </style>
+   </head>
+   <body>
+      <div id="error-page">
+         <div class="content">
+            <h2 class="header" data-text="404">
+               404
+            </h2>
+            <h4 data-text="Opps! Page not found">
+               Opps! Page not found
+            </h4>
+         </div>
+      </div>
+   </body>
+</html>
