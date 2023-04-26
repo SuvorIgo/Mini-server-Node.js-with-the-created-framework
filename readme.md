@@ -12,7 +12,7 @@
 
 The REST API to the example app is described below.
 
-## List of requests for fiilms
+## List of requests for films
 
 > GET: /api/films
 > 
